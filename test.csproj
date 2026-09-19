@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>TEST</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <Version>2.0.3</Version>
+    <PathMap>$(MSBuildProjectDirectory)=TEST</PathMap>
+    <!-- The two lines below will set the output path for the binaries -->
+    <AssemblyName>TEST</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\db\CustomQuestZones\**" />
+    <Content Remove="Resources\db\CustomQuestZones\**" />
+    <EmbeddedResource Remove="Resources\db\CustomQuestZones\**" />
+    <None Remove="Resources\db\CustomQuestZones\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SPTarkov.Common" Version="4.0.13" />
+    <PackageReference Include="SPTarkov.DI" Version="4.0.13" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.13" />
+    <PackageReference Include="WTT-ServerCommonLib" Version="2.0.20" />
+  </ItemGroup>
+</Project>
