@@ -37,5 +37,6 @@ public class SOCOM(
         await wttCommon.CustomLocaleService.CreateCustomLocales(assembly);
         await wttCommon.CustomQuestZoneService.CreateCustomQuestZones(assembly);
         await wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly);
+        await wttCommon.CustomBuffService.CreateCustomBuffs(assembly);
     }
 }
