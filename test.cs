@@ -33,7 +33,7 @@ public class Test(
     public Task OnLoadAsync(CancellationToken cancellationToken)
     {
         Assembly assembly = Assembly.GetExecutingAssembly();
-        wttCommon.CustomQuestItemService.CreateCustomQuestItems(assembly);
+        //wttCommon.CustomQuestItemService.CreateCustomQuestItems(assembly);
         wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
         wttCommon.CustomQuestService.CreateCustomQuests(assembly);
         wttCommon.CustomLootspawnService.CreateCustomLootSpawns(assembly);
